@@ -1,0 +1,326 @@
+<head>
+  
+</head>
+<body>
+  <div id="holder">
+    <nav id="navbar">
+      <header>
+        C++ Docs
+      </header>
+      <a class="nav-link" href="#hello">
+        Hello World
+      </a>
+      <a class="nav-link" href="#var">
+        Variable Names
+      </a>
+      <a class="nav-link" href="#declare">
+        Declaring Variables
+      </a>
+      <a class="nav-link" href="#keywords">
+        Keywords
+      </a>
+      <a class="nav-link" href="#data">
+        Data types
+      </a>
+      <a class="nav-link" href="#if">
+        if... else
+      </a>
+      <a class="nav-link" href="#for">
+        for
+      </a>
+      <a class="nav-link" href="#while">
+        while
+      </a>
+      <a class="nav-link" href="#functions">
+        Functions
+      </a>
+      <a class="nav-link" href="#ref">
+        Reference
+      </a>
+    </nav>
+    <div id="nav-space"></div>
+    <main id="main-doc">
+    <section id="hello" class="main-section">
+      <header >
+        Hello World
+      </header>
+      <p>
+        For a hello world program in C++, state you are using the standard namespace 'std,' include the default input and output stream, declare the main function, and output "Hello World!"
+      </p>
+      <code>
+        <pre>
+  using namespace std;
+  #include &lt;iostream&gt;
+  int main() {
+     cout << "Hello World!";
+  }
+        </pre>
+      </code>
+    </section>
+      <hr>
+    <section id="var" class="main-section">
+      <header>
+        Variable Names
+      </header>
+      <p>
+        Each variable needs a name that identifies it and distinguishes it from the others. A valid identifier is a sequence of one or more letters, digits, or underscore characters (_). Spaces, punctuation marks, and symbols cannot be part of an identifier. Identifiers cannot be any of the reserved <a href="#keywords">keywords.</a> In addition, identifiers must always begin with a letter or an underline character. In no case can they begin with a digit.
+      </p>
+    </section>
+      <hr>
+    <section id="declare" class="main-section">
+      <header>
+        Declaring Variables
+      </header>
+      <p>
+        To declare a variable in C++, one must state the <a href="#data">data type</a> and then follow that with a valid <a href="#var">variable name.</a> An example would be:
+      </p>
+      <code>
+        <pre>
+  int a;</pre>
+      </code>
+      <p>You can also declare multiple variables at once if they are of the same data type, such as:</p>
+      <code>
+        <pre>
+  float x, y, z;</pre>
+      </code>
+    </section>
+      <hr>
+    <section id="keywords" class="main-section">
+      <header>
+        Keywords
+      </header>
+      <p>
+        Reserved keywords in C++ are as follows:
+      </p>
+      <ul>
+        <li>alignas</li>
+        <li>alignof</li>
+        <li>and</li>
+        <li>and_eq</li>
+        <li>asm</li>
+        <li>atomic_cancel</li>
+        <li>atomic_commit</li>
+        <li>atomic_noexcept</li>
+        <li>auto</li>
+        <li>bitand</li>
+        <li>bitor</li>
+        <li>bool</li>
+        <li>break</li>
+        <li>case</li>
+        <li>catch</li>
+        <li>char</li>
+        <li>char8_t</li>
+        <li>char16_t</li>
+        <li>char32_t</li>
+        <li>class</li>
+        <li>compl</li>
+        <li>concept</li>
+        <li>const</li>
+        <li>consteval</li>
+        <li>constexpr</li>
+        <li>constinit</li>
+        <li>const_cast</li>
+        <li>continue</li>
+        <li>co_await</li>
+        <li>co_return</li>
+        <li>co_yield</li>
+        <li>decltype</li>
+        <li>default</li>
+        <li>delete</li>
+        <li>do</li>
+        <li>double</li>
+        <li>dynamic_cast</li>
+        <li>else</li>
+        <li>enum</li>
+        <li>explicit</li>
+        <li>export</li>
+        <li>extern</li>
+        <li>false</li>
+        <li>float</li>
+        <li>for</li>
+        <li>friend</li>
+        <li>goto</li>
+        <li>if</li>
+        <li>inline</li>
+        <li>int</li>
+        <li>long</li>
+        <li>mutable</li>
+        <li>namespace</li>
+        <li>new</li>
+        <li>noexcept</li>
+        <li>not</li>
+        <li>not_eq</li>
+        <li>nullptr</li>
+        <li>operator</li>
+        <li>or</li>
+        <li>or_eq</li>
+        <li>private</li>
+        <li>protected</li>
+        <li>public</li>
+        <li>reflexpr</li>
+        <li>register</li>
+        <li>reinterpret_cast</li>
+        <li>requires</li>
+        <li>return</li>
+        <li>short</li>
+        <li>signed</li>
+        <li>sizeof</li>
+        <li>static</li>
+        <li>static_assert</li>
+        <li>static_cast</li>
+        <li>struct</li>
+        <li>switch</li>
+        <li>synchronized</li>
+        <li>template</li>
+        <li>this</li>
+        <li>thread_local</li>
+        <li>throw</li>
+        <li>true</li>
+        <li>try</li>
+        <li>typedef</li>
+        <li>typeid</li>
+        <li>typename</li>
+        <li>union</li>
+        <li>unsigned</li>
+        <li>using</li>
+        <li>virtual</li>
+        <li>void</li>
+        <li>volatile</li>
+        <li>wchar_t</li>
+        <li>while</li>
+        <li>xor</li>
+        <li>xor_eq</li>
+      </ul>
+    </section>
+      <hr>
+    <section id="data" class="main-section">
+      <header>
+        Data types
+      </header>
+      <p>
+        There are several data types in C++. They broadly fall into five categories: character, signed integer, unsigned integer, floating-point, and other.
+      </p>
+      <p>The character types include:</p>
+      <ul>
+        <li>char</li>
+        <li>char16_t</li>
+        <li>char32_t</li>
+        <li>wchar_t</li>
+      </ul>
+      <p>The signed integer types include</p>
+      <ul>
+        <li>signed char</li>
+        <li>signed short int</li>
+        <li>signed int</li>
+        <li>signed long int</li>
+        <li>signed long long int</li>
+      </ul>
+      <p>The unsigned integer types include</p>
+      <ul>
+        <li>unsigned char</li>
+        <li>unsigned short int</li>
+        <li>unsigned int</li>
+        <li>unsigned long int</li>
+        <li>unsigned long long int</li>
+      </ul>
+      <p>The floating-point types include:</p>
+      <ul>
+        <li>float</li>
+        <li>double</li>
+        <li>long double</li>
+      </ul>
+      <p>The other types include:</p>
+      <ul>
+        <li>bool</li>
+        <li>void</li>
+        <li>nullptr</li>
+      </ul>
+    </section>
+      <hr>
+    <section id="if" class="main-section">
+      <header>
+        if... else
+      </header>
+      <p>
+        If/else statements are formulated in the syntax
+      </p>
+      <code><pre>
+ if (condition) {
+    statement
+ } else if (condition) {
+    statement
+ } else {
+    statement
+ }</pre>
+      </code>
+      <p>For example,</p>
+      <code><pre>
+  if(a == 1) {
+    b = 3;
+  } else if (a == 2) {
+    b = 5;
+  } else {
+    b = 7;
+  }</pre></code>
+    </section>
+      <hr>
+    <section id="for" class="main-section">
+      <header>
+        for
+      </header>
+      <p>
+        For-loops initalize a variable, repeat a statement while a condition is true, and increment a variable.
+      </p>
+      <code><pre>
+  for(int i = 0; i &lt; 5; i++) {
+      cout &lt;&lt; i &lt;&lt; endl;
+  }
+    </section>
+      <hr>
+    <section id="while" class="main-section">
+      <header>
+        while
+      </header>
+      <p>
+        The while-loop repeatedly executes a statement until a given condition is met. The do-while loop behaves similarly except it evaluates the condition at the end and thus always executes at least once. Examples:
+      </p>
+      <code><pre>
+  while (a &lt; 3) {
+    cout &lt;&lt; a;
+    a++;
+  }</pre></code>
+      <code><pre>
+  do {
+    cout &lt;&lt; a;
+  } while (a &lt; 3);</pre></code>
+    </section>
+      <hr>
+    <section id="functions" class="main-section">
+      <header>
+        Functions
+      </header>
+      <p>
+        To define a function, one must declare the <a href="#data">data type</a> the function returns, give the function a <a href="#var">name</a> to be called by, and optionally state parameters to be passed into the function.
+      </p>
+      <code><pre>
+  int minus(int a, int b) {
+    int r = a - b;
+    return r;
+  }
+      </pre></code>
+    </section>
+      <hr>
+    <section id="ref" class="main-section">
+      <header>
+        Reference
+      </header>
+      <p>
+        Documentation on this page is taken from <a href="https://docs.microsoft.com/">Microsoft Docs</a> and <a href="https://cplusplus.com.doc"> CPlusPlus.com</a>
+      </p>
+    </section>
+  </main>
+    <footer>
+      <p>&copy Sam Lacet-Brown, 2021</p>
+    </f>
+  </div>
+</body>

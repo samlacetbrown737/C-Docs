@@ -1,0 +1,104 @@
+#holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#main-doc {
+  margin-bottom: 60px;
+  flex: 1;
+  color: #475657;
+  padding-left: 10px;
+}
+
+#navbar header {
+  font-size: 22px;
+  padding-top: 2vh;
+  height: 6vh;
+  justify-content: center;
+  text-align: center;
+}
+
+nav {
+  position: fixed;
+  height: 90vh;
+  width: 150px;
+  top: 0;
+  left: 0;
+  margin-bottom: 60px;
+  border: 3px black solid;
+  background: #12EAEA;
+  color: #475657;
+}
+
+#nav-space {
+  width: 150px;
+}
+
+.nav-link {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  height: 6vh;
+  padding-top: 2vh;
+  border-top: 1px grey solid;
+  text-decoration: none;
+  color: #475657;
+}
+
+.nav-link:hover {
+  background: #475657;
+  color: #12EAEA;
+}
+
+.main-section header {
+  font-weight: 800;
+  font-size: 28px;
+  color: black;
+}
+
+#keywords ul {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 25vw;
+}
+
+@media (max-width: 1050px) {
+  #keywords ul {
+  height: 50vw;
+}
+}
+
+@media (max-width: 800px) {
+  #keywords ul {
+  height: 100vw;
+}
+}
+
+@media (max-width: 650px) {
+  #keywords ul {
+  height: 150vw;
+}
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+  width: 100%;
+  background: #475657;
+  color: #12EAEA;
+}
+hr {
+  margin-left: -10px;
+  margin-right: -10px;
+  border: 1px #12EAEA solid;
+}
+footer p {
+  left: 10px;
+  position: relative;
+}
